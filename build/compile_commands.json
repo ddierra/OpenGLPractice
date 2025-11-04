@@ -1,0 +1,14 @@
+[
+{
+  "directory": "A:/OpenGLPractice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/MyOpenGLProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyOpenGLProject.dir\\src\\main.cpp.obj -c A:\\OpenGLPractice\\src\\main.cpp",
+  "file": "A:/OpenGLPractice/src/main.cpp",
+  "output": "CMakeFiles/MyOpenGLProject.dir/src/main.cpp.obj"
+},
+{
+  "directory": "A:/OpenGLPractice/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/MyOpenGLProject.dir/includes_C.rsp -g -o CMakeFiles\\MyOpenGLProject.dir\\third_party\\glad\\src\\glad.c.obj -c A:\\OpenGLPractice\\third_party\\glad\\src\\glad.c",
+  "file": "A:/OpenGLPractice/third_party/glad/src/glad.c",
+  "output": "CMakeFiles/MyOpenGLProject.dir/third_party/glad/src/glad.c.obj"
+}
+]
