@@ -1,22 +1,22 @@
 
-if (NOT EXISTS "A:/glfw-3.4/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"A:/glfw-3.4/build/install_manifest.txt\"")
+if (NOT EXISTS "A:/OpenGLPractice/third_party/glfw/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"A:/OpenGLPractice/third_party/glfw/build/install_manifest.txt\"")
 endif()
 
-file(READ "A:/glfw-3.4/build/install_manifest.txt" files)
+file(READ "A:/OpenGLPractice/third_party/glfw/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})
   message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
   if (EXISTS "$ENV{DESTDIR}${file}")
-    exec_program("C:/Program Files/CMake/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+    exec_program("C:/msys64/mingw64/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
                  OUTPUT_VARIABLE rm_out
                  RETURN_VALUE rm_retval)
     if (NOT "${rm_retval}" STREQUAL 0)
       MESSAGE(FATAL_ERROR "Problem when removing \"$ENV{DESTDIR}${file}\"")
     endif()
   elseif (IS_SYMLINK "$ENV{DESTDIR}${file}")
-    EXEC_PROGRAM("C:/Program Files/CMake/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+    EXEC_PROGRAM("C:/msys64/mingw64/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
                  OUTPUT_VARIABLE rm_out
                  RETURN_VALUE rm_retval)
     if (NOT "${rm_retval}" STREQUAL 0)

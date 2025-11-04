@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(MyOpenGLProject)
+project(Practice)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -16,7 +16,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 # Link GLFW
 target_link_directories(${PROJECT_NAME} PRIVATE
-    third_party/glfw/lib
+    third_party/glfw/build/src
 )
 target_link_libraries(${PROJECT_NAME} glfw3)
 

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"A:/OpenGLPractice/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
