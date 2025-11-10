@@ -1,0 +1,45 @@
+paste these contents? # ----------------------------
+# CMake build folders and cache
+# ----------------------------
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ----------------------------
+# Visual Studio / Windows IDE
+# ----------------------------
+*.sln
+*.vcxproj*
+*.user
+*.ncb
+*.suo
+*.opensdf
+*.tlog
+*.idb
+*.pdb
+*.ilk
+*.obj
+*.exe
+*.dll
+*.lib
+*.app
+
+# ----------------------------
+# MinGW / GCC specific
+# ----------------------------
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# ----------------------------
+# Miscellaneous OS / temporary files
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
